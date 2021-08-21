@@ -1,26 +1,24 @@
 
 #if elif statements
 
-'''marks = int(input("Enter your marks"))
+marks = int(input("Enter your marks"))
 
 if marks >= 90:
-    print("You have grade A")
+        print("You have grade A")
 elif marks >= 70:
     print("you have grade B")
-
 elif marks >= 60:
     print("you have grade C")
-
-elif marks < 60:
+else:
     print("Grade D")
 
 #lists in python
-names = ["mike","john","rob","kamau"]
+names = ["mike", "john", "rob", "kamau"]
 
 print(names)
 '''
 '''
-numbers = [1,1,1,1,1]
+numbers = [1, 1, 1, 1, 1]
 
 numbers[2] = 5
 
@@ -57,11 +55,11 @@ for x in range(1,11):
 
 def repeat_name():
     for nums in range (1,6):
-        print("peter kirumba is awsome")
+        print("peter kirumba is awesome")
 
 repeat_name()
 
-fruits = ["apple", "banana", "peach","orange"]
+fruits = ["apple", "banana", "peach", "orange"]
 
 for name in fruits:
     print(name)
@@ -72,9 +70,9 @@ for nam in range(0,21,2):
 
 '''
 '''
-username = input("what is your username")
+username = input("what is your username: ")
 
-password = input("what is your password")
+password = input("what is your password: ")
 
 if username == "admin" and password == "admin123":
     print("valid user")
@@ -117,7 +115,7 @@ print(food_items)
 def repeat():
     count = 0
     while(count <= 10):
-        count =+ 1
+        count += 1
         print("peter you are a hero")
 repeat()
 '''
@@ -174,13 +172,12 @@ def calculate_bmi(new_height, new_weight):
 weight = float(input("enter weight in kgs: "))
 height = float(input("enter height in meters: "))
 
-bmi = calculate_bmi(weight,height)
+bmi = calculate_bmi(weight, height)
 
 print(bmi)
-'''
 
-#errors and exceptions
-"""
+# errors and exceptions
+
 try:
     a = 20
     b = 5
@@ -201,12 +198,12 @@ content = file.read()
 print(content)
 
 file.close()
-"""
-'''
+
 file = open("homey.txt", 'w')
 
 file.write("this is the written file")
 
+# you can also use with keyword in this instance,
 file.close()
 '''
 '''
@@ -448,7 +445,7 @@ Rob = ScienceStudent(20)
 Rob.science()
 Rob.getdata()
 Rob.putdata()
-'''
+
 
 #recursion
 def factorial(x):
@@ -478,7 +475,7 @@ print(seta | setb)#union of the sets
 print(seta & setb)#ntersection of sets---elements common between the two sets
 
 #itertools
-"""
+
 from itertools import count
 
 for i in count(3):
@@ -486,8 +483,7 @@ for i in count(3):
 
     if i >= 20:
         break
-"""
-'''
+
 from itertools import accumulate, takewhile
 
 numbers = list(accumulate(range(8)))
@@ -574,10 +570,9 @@ Comp.Getspecs()
 Comp.Displayspecs()
 comp.getweight()
 comp.displayweight()
-'''
+
 
 #regular expressions
-"""
 import re
 
 pattern = r"eggs"
@@ -611,8 +606,7 @@ pattern = r"john"
 newstring = re.sub(pattern, "rob",string)#sub function useses the pattern to replace 
 
 print(newstring)
-"""
-'''
+
 import re
 
 pattern = r"gr.y"
@@ -630,8 +624,7 @@ pattern = r"^gr.y$"
 if re.match(pattern, "grty"):
     print("match 1")
 
-'''
-"""
+
 import re
 
 pattern = r"[A-Z][A-Z][0-9]"
@@ -641,7 +634,6 @@ if re.search(pattern, "AA6"):
 
 else:
     print("match not found")
-"""
 
 #STAR METACARACTER
 import re
@@ -651,7 +643,7 @@ pattern = r"eggs(bacon)*"
 if re.match(pattern,"eggsbacon"):
     print("match found")
 
-#groups
+# groups
 
 import re
 
